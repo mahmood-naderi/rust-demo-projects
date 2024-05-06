@@ -1,5 +1,5 @@
 use std::io;
-use std::cmp::Ordering;
+use colored::*;
 
 fn main() {
     println!("Welcome to BMI calculator!");
@@ -26,6 +26,7 @@ fn main() {
 
     let bmi = bmi_calculator(height, weight);
     println!("Your BMI is {}", bmi);
+    print_message(bmi);
 }
 
 fn bmi_calculator(height:f32, weight:f32) -> f32 {
@@ -36,4 +37,10 @@ fn bmi_calculator(height:f32, weight:f32) -> f32 {
 
 fn cm_to_m(height:f32) -> f32 {
     return height / 100.0;
+}
+
+fn print_message(bmi:f32) {
+    if bmi >= 30.0 { println!("{}", "You are overweight!".red()); }
+    else if bmi <= 18.4 { println!("{}", "You are underweight!".yellow()); }
+    else { println!("{}", "You are in normal weight!".blue()); }
 }

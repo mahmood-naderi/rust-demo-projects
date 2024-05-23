@@ -1,1 +1,1 @@
-/home/mahmoud/Documents/dev/rust/rust-demo-projects/mini-grep/target/debug/mini-grep: /home/mahmoud/Documents/dev/rust/rust-demo-projects/mini-grep/src/main.rs
+/home/mahmoud/Documents/dev/rust/rust-demo-projects/mini-grep/target/debug/mini-grep: /home/mahmoud/Documents/dev/rust/rust-demo-projects/mini-grep/src/lib.rs /home/mahmoud/Documents/dev/rust/rust-demo-projects/mini-grep/src/main.rs
